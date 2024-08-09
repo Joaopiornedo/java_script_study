@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+
+        }
+        body{
+            background-image: linear-gradient(blue,white);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            overflow-x: auto;
+            font-size: 1.2em;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.300);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-image: linear-gradient(blue ,white);
+            height: 50%;
+            width: 30%;
+        }
+        input{
+            width: 70%;
+            border-radius: 20px;
+            border: none;
+            height: 30px;
+            text-align: center;
+        }
+       button{
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1.2em;
+        background-color: blue;
+        color: white;
+        transition: ease 0.5s;
+        cursor: pointer;
+       }
+       button:hover{
+        background-color: white;
+        color: blue;
+        border: solid 1px blue;
+        transform: scale(1.1);
+        
+       }
+    </style>
+    <script src="contador.js" defer></script>
+</head>
+<body>
+
+    <div >
+        <h1>Contador</h1>
+        <p>Valor inicial</p>
+        <input type="number" name="inicio" id="start"> 
+        <p>Valor final</p>
+        <input type="number" name="fim" id="finish">
+        <p>Contar de :</p>
+        <input type="number" name="passo" id="up">
+        <button id="btn">Contar</button>
+        <section id="res">
+            Pronto para Contar
+        </section>
+
+    </div>
+    
+</body>
+</html>
